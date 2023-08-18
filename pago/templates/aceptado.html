@@ -1,0 +1,55 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'estilos/estilos.css' %}">
+
+    <title>Formulario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="main">
+
+        <figure class="main__figure">
+            <img src= "{% static 'img/Logo de Programando Paraguay1.png' %}" class="main__img">
+        </figure>
+
+        <div class="main__contact">
+
+            <h2 class="main__title">Felicidades!!! {{estudiante.Nombre}}. Fuiste seleccionado/a para ser parte del bootcamp de Programando Paraguay!!!</h2>
+            <p class="main__paragraph">Haz click en el boton de pago. Costo: 50 mil gs</p>
+
+            <form class= 'main__form' action="/buscar/" method="get">
+
+                
+
+                <input type="submit" value="Ingresar a Pagopar" class="main__input main__input--send">
+
+            </form>
+
+
+
+        
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
